@@ -1,57 +1,90 @@
 body{
-	font-family: Arial;
-	margin: 0;
-	padding: 20px;
-	background-color: #f1f1f1
+     font-family: Arial;
+     margin: 0;
+     background-color: #f1f1f1 
 }
-header{
-	background-color: #ffffff;
-	padding: 30px;
+ #backcover{
+     background-image: url('.././Bilder/road.jpg');
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size:cover;
+     padding: 20px;
+     max-width:100%;
+     max-height: 100%;
 }
-header h1{
-	text-align: center;
-	font-size: 60px;
-	color:#000000;
-	margin:1.5px;
+ header{
+     background-color: #ffffff;
+     padding: 30px;
 }
-*{
-	box-sizing: border-box; 
+ header h1{
+     text-align: center;
+     font-size: 60px;
+     color:#000000;
+     margin:1.5px;
 }
-h2{
-	color: #000000
-	margin: 1.5 0px;
+ *{
+     box-sizing: border-box;
 }
-.row:after{
-	content: '';
-	display: table;
-	clear: both;
+ h2{
+     color: #000000 margin: 1.5 0px;
 }
-.vänsterKollumn{
-	float: left;
-	width: 75%;
+ .row:after{
+     content: '';
+     display: table;
+     clear: both;
 }
-.högerKollumn{
-	float: right;
-	width: 25%;
-	padding-left: 20px; 
+ .vänsterKollumn{
+     float: left;
+     width: 75%;
 }
-.card{
-	padding: 20px;
-	background-color: #ffffff;
-	margin-top: 20px;
+ .högerKollumn{
+     float: right;
+     width: 25%;
+     padding-left: 20px;
 }
-.card img{
-	width: 100%
+ .card{
+     padding: 20px;
+     background-color: #ffffff;
+     margin-top: 20px;
 }
-footer{
-	background-color: #dddddd;
-	padding: 20px;
-	text-align: center;
-	margin-top: 20px;
+ .card img{
+     width: 100% 
 }
-@media(max-width: 800px){
-	.vänsterKollumn,.högerKollumn{
-		width: 100%;
-		padding: 0px;
-	}
+ footer{
+     background-color: #dddddd;
+     padding: 20px;
+     text-align: center;
+     margin-top: 20px;
+}
+ @media(max-width: 800px){
+     .vänsterKollumn,.högerKollumn{
+         width: 100%;
+         padding: 0px;
+    }
+}
+ #blogmeny{
+     display: flex;
+     width: 100%;
+     height: 50px;
+     background:rgba(0,0,0, 0.8);
+     flex-direction: row;
+     position: sticky;
+     top: 0px;
+     border: 1px black;
+     border-bottom-left-radius: 25px;
+     border-bottom-right-radius: 25px;
+     margin-top: -20px;
+}
+ .blogMenyBox{
+     display: flex;
+     width: 25%;
+     justify-content: center;
+}
+ .blogMenyBox:hover{
+     background:rgba(0,0,0, 1);
+     border-bottom-left-radius: 25px;
+     border-bottom-right-radius: 25px;
+}
+ .blogMenyBox p{
+     color:white;
 }

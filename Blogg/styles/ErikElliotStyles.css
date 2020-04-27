@@ -43,9 +43,15 @@ h2{
 .card img{
 	width: 100%
 }
-figure, figcaption{
-  display: block;
+figure{ 
+	display: table; 
+}
+figcaption{
+  display: table-caption;
+  caption-side: bottom;
   font-family: 'Cherry Swash';
+  font-size: 1.0vw; 
+  text-align: right;
 }
 footer{
 	background-color: #dddddd;

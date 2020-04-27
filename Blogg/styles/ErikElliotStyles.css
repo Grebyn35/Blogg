@@ -43,6 +43,10 @@ h2{
 .card img{
 	width: 100%
 }
+figure, figcaption{
+  display: block;
+  font-family: 'Cherry Swash';
+}
 footer{
 	background-color: #dddddd;
 	padding: 20px;
